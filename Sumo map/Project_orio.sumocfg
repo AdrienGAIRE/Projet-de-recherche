@@ -1,0 +1,11 @@
+<configuration>
+    <input>
+        <net-file value="douai_multimodels.net.xml"/>
+        <route-files value="douai_demand_cars.rou.xml,douaiWalks.rou.xml"/>
+        <gui-settings-file value="douai_simulation.settings.xml"/>
+ <additional-files value="douai_multimodels.add.xml"/>   </input>
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+    </time>
+</configuration>

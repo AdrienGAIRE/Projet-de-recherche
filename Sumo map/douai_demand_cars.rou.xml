@@ -1,0 +1,8 @@
+<routes>
+	<vType id="passenger" length="5" maxSpeed="50" accel="2.6" decel="4.5" sigma="0.2" speedDev="0.2" vClass="passenger"/>
+	<vType id="tram" length="40" maxSpeed="13" accel="0.8" decel="0.5" sigma="0.1" speedDev="0.1" vClass="rail_urban"/>
+ <trip id="trip0" type="passenger" depart="5" color="1,1,0" from="entrance_north" to="entrance_north" departPos="0" arrivalPos="6">
+       <stop lane="entrance_north_0" startPos="0" endPos="6" triggered="true"  parking="true"/>
+       <stop parkingArea="ParkCinema0" triggered="true"/>
+   </trip>
+</routes>

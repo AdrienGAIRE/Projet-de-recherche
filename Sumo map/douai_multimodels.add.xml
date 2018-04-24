@@ -1,0 +1,84 @@
+<additionals>
+<parkingArea id="ParkCinema0" lane="parking_cinema_0_0" startPos="0" endPos="100" roadsideCapacity="30" angle="90" length="5"/>	
+<parkingArea id="ParkCinema2" lane="parking_cinema_2_0" startPos="0" endPos="102" roadsideCapacity="30" angle="90" length="5"/>	
+<parkingArea id="ParkCinema40" lane="parking_cinema_40_0" startPos="0" endPos="57" roadsideCapacity="15" angle="90" length="5"/>	
+<parkingArea id="ParkCinema41" lane="parking_cinema_41_0" startPos="0" endPos="35" roadsideCapacity="11" angle="90" length="5"/>	
+<parkingArea id="ParkCinema60" lane="parking_cinema_6_0" startPos="0" endPos="35" roadsideCapacity="11" angle="90" length="5"/>	
+<parkingArea id="ParkCinema80" lane="parking_cinema_8_0" startPos="0" endPos="35" roadsideCapacity="11" angle="90" length="5"/>	
+
+<busStop id="busstop1" lane="trainCinema_0" startPos="10" endPos="20" lines="100 101">
+<access lane="routeCinema_0" pos="15"/>
+</busStop>
+<busStop id="busstop2" lane="tranParking_0" startPos="230" endPos="240" lines="100 101"/>
+<busStop id="busstop3" lane="tranParkingOpp.13_1" startPos="0" endPos="9" lines="100 101">
+</busStop>
+<busStop id="busstop4" lane="trainCinemaOpp.196_1" startPos="0" endPos="8.6" lines="100 101"/>
+
+
+<vType id="tramnew" length="40" maxSpeed="13" accel="0.8" decel="0.5" sigma="0.1" speedDev="0.1" vClass="bus"/>
+<vType id="BUS" accel="2.6" decel="4.5" sigma="0" length="12" minGap="3" maxSpeed="70" color="1,1,0" guiShape="bus" vClass="bus"/>
+
+   <trip id="tram0" type="BUS" depart="0" color="1,1,0" from="train_entrance_east" to="train_leave_west" line="100">
+<stop busStop="busstop1" duration="20"/>
+<stop busStop="busstop2" duration="20"/>
+   </trip>
+   <trip id="tramOpp0" line="200" type="BUS" depart="0" color="1,1,0" from="train_entrance_west" to="train_leave_east">
+<stop busStop="busstop3" duration="20"/>
+<stop busStop="busstop4" duration="20"/>
+   </trip>
+
+   <trip id="tram1" line="100" type="BUS" depart="100" color="1,1,0" from="train_entrance_east" to="train_leave_west">
+<stop busStop="busstop1" duration="20"/>
+<stop busStop="busstop2" duration="20"/>
+   </trip>
+   <trip id="tramOpp1" line="200" type="BUS" depart="100" color="1,1,0" from="train_entrance_west" to="train_leave_east">
+<stop busStop="busstop3" duration="20"/>
+<stop busStop="busstop4" duration="20"/>
+   </trip>
+
+   <trip id="tram2" line="100" type="BUS" depart="300" color="1,1,0" from="train_entrance_east" to="train_leave_west">
+<stop busStop="busstop1" duration="20"/>
+<stop busStop="busstop2" duration="20"/>
+   </trip>
+   <trip id="tramOpp2" line="200" type="BUS" depart="300" color="1,1,0" from="train_entrance_west" to="train_leave_east">
+<stop busStop="busstop3" duration="20"/>
+<stop busStop="busstop4" duration="20"/>
+   </trip>
+
+   <trip id="tram3" line="100" type="BUS" depart="400" color="1,1,0" from="train_entrance_east" to="train_leave_west">
+<stop busStop="busstop1" duration="20"/>
+<stop busStop="busstop2" duration="20"/>
+   </trip>
+   <trip id="tramOpp3" line="200" type="BUS" depart="400" color="1,1,0" from="train_entrance_west" to="train_leave_east">
+<stop busStop="busstop3" duration="20"/>
+<stop busStop="busstop4" duration="20"/>
+   </trip>
+
+   <trip id="tram4" line="100" type="BUS" depart="600" color="1,1,0" from="train_entrance_east" to="train_leave_west">
+<stop busStop="busstop1" duration="20"/>
+<stop busStop="busstop2" duration="20"/>
+   </trip>
+   <trip id="tramOpp4" line="200" type="BUS" depart="600" color="1,1,0" from="train_entrance_west" to="train_leave_east">
+<stop busStop="busstop3" duration="20"/>
+<stop busStop="busstop4" duration="20"/>
+   </trip>
+
+   <trip id="tram5" line="100" type="BUS" depart="700" color="1,1,0" from="train_entrance_east" to="train_leave_west">
+<stop busStop="busstop1" duration="20"/>
+<stop busStop="busstop2" duration="20"/>
+   </trip>
+   <trip id="tramOpp5" line="200" type="BUS" depart="700" color="1,1,0" from="train_entrance_west" to="train_leave_east">
+<stop busStop="busstop3" duration="20"/>
+<stop busStop="busstop4" duration="20"/>
+   </trip>
+
+   <trip id="tram6" line="100" type="BUS" depart="1000" color="1,1,0" from="train_entrance_east" to="train_leave_west">
+<stop busStop="busstop1" duration="20"/>
+<stop busStop="busstop2" duration="20"/>
+   </trip>
+   <trip id="tramOpp6" line="200" type="BUS" depart="1000" color="1,1,0" from="train_entrance_west" to="train_leave_east">
+<stop busStop="busstop3" duration="20"/>
+<stop busStop="busstop4" duration="20"/>
+   </trip>
+
+</additionals>
